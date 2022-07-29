@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <a href="index.html">Simply<span>Recipes</span></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tag.html">Tags</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+        </ul>
+      </div>
+      <a id="nav-btn" href="#">Contact</a>
+    </nav>
+
+    <div id="container">
+      <section id="home">
+        <div id="home-banner">
+          <h1>Simply Recipes</h1>
+          <h3>No Fluff, Just Recipes</h3>
+        </div>
+        <div class="food-container">
+          <div class="list">
+            <ul>
+              <h4>Recipes</h4>
+              <li>Beef(1)</li>
+              <li>Breakfast(2)</li>
+              <li>Carrots(3)</li>
+              <li>Food(4)</li>
+            </ul>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="img-box">
+                <img src="/image/burger.jpg" alt="error" />
+                <div class="details">
+                  <h4>Doubal Patty Burger</h4>
+                  <p>Prep : 15min | Cook : 15min</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <img src="/image/Greek Ribs.jpg" alt="error" />
+                <div class="details">
+                  <h4>Greek Ribs</h4>
+                  <p>Prep : 35min | Cook : 20min</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <img src="/image/soup.jpg" alt="error" />
+                <div class="details">
+                  <h4>Vegetable Soup</h4>
+                  <p>Prep : 15min | Cook : 15min</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <img src="/image/Stack.jpg" alt="" />
+                <div class="details">
+                  <h4>Stack</h4>
+                  <p>Prep : 45min | Cook : 35min</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <img src="/image/Chess bread.jpg" alt="" />
+                <div class="details">
+                  <h4>Chess Bread</h4>
+                  <p>Prep : 45min | Cook : 35min</p>
+                </div>
+              </div>
+              <div class="img-box">
+                <img src="/image/Curry.jpg" alt="" />
+                <div class="details">
+                  <h4>Indian Curry</h4>
+                  <p>Prep : 45min | Cook : 35min</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container2">
+      <div id="banner-half"></div>
+      <div class="food-container">
+        <div class="list">
+          <ul>
+            <h4>Recipes</h4>
+            <li>Beef(1)</li>
+            <li>Breakfast(2)</li>
+            <li>Carrots(3)</li>
+            <li>Food(4)</li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="img-box">
+              <img src="/image/Noodles.jpg" alt="error" />
+              <div class="details">
+                <h4>Doubal Patty Burger</h4>
+                <p>Prep : 15min | Cook : 15min</p>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/image/Fries.jpg" alt="error" />
+              <div class="details">
+                <h4>Fries</h4>
+                <p>Prep : 35min | Cook : 20min</p>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/image/Fruit Sald.jpg" alt="error" />
+              <div class="details">
+                <h4>Fruit Salad</h4>
+                <p>Prep : 10min | Cook : 0min</p>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/image/Mago.jpg" alt="" />
+              <div class="details">
+                <h4>Mango Oats</h4>
+                <p>Prep : 20min | Cook : 15min</p>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="/image/Pizza.jpg" alt="" />
+              <div class="details">
+                <h4>Chess Pizza</h4>
+                <p>Prep : 45min | Cook : 35min</p>
+              </div>
+            </div>
+            <div class="img-box">
+              <img
+                src="/image/coffe.jpg
+              "
+                alt="error"
+              />
+              <div class="details">
+                <h4>Cafe Chino Coffe</h4>
+                <p>Prep : 10min | Cook : 6min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        <p>
+          &copy; 2022 <span>SimplyRecipes</span> Built by
+          <span>Him23Coder</span>
+        </p>
+      </div>
+    </footer>
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul ").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul ").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
